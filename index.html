@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- link Favicon -->
+    <link rel="icon" type="png/image" href="favicon.png" />
+    <!-- link font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-all">
+      <div class="image-container">
+        <img src="img/tanvir-1.jpg" alt="music--thumb--image" />
+      </div>
+      <h2 class="title" id="title">Electric Chill Machine</h2>
+      <h4 class="artist" id="artist">Tanvir Sohan</h4>
+      <!-- progress-container -->
+      <div class="control-container">
+        <div class="play-time" id="play-time"><span>00:00</span></div>
+        <div class="progress-container" id="progress-container">
+          <div class="progress"></div>
+        </div>
+
+        <div class="duration" id="duration"><span>00:00</span></div>
+      </div>
+      <!-- player control -->
+      <div class="player-control-container" id="player-control-container">
+        <i class="fa-solid fa-caret-left" id="prev"></i>
+
+        <i class="fa-solid fa-circle-play" title="play" id="play"></i>
+
+        <i class="fa-solid fa-caret-right" id="next"></i>
+      </div>
+
+      <audio src="music/tanvir-1.mp3" id="audio" controller></audio>
+    </div>
+
+    <!-- link Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
